@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consultoria Ambiental Legal</title>
+  <title>Cultivato - Soluções Ambientais</title>
+  <link rel="icon" type="image/png" href="ICONE.png">
   <style>
     * {
       margin: 0;
@@ -12,21 +13,22 @@
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e8f5e9;
-      color: #333;
+      background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      background-color: #121212;
+      color: #f0f0f0;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
     header {
-      background: url('abc.jpg') no-repeat center center;
-      background-size: cover;
-      color: white;
-      padding: 80px 20px;
+      background: url('Logo Horizontal.png') no-repeat center center;
+      background-size: contain;
+      background-color: #0d3d0d;
+      padding: 140px 20px;
       text-align: center;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
       animation: fadeIn 2s ease-in-out;
     }
     nav {
-      background-color: #1b5e20;
+      background-color: rgba(27, 94, 32, 0.95);
       padding: 15px;
       text-align: center;
       position: sticky;
@@ -41,33 +43,50 @@
       transition: color 0.3s;
     }
     nav a:hover {
-      color: #c8e6c9;
+      color: #a5d6a7;
     }
     section {
       padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
       animation: fadeIn 1.5s ease-in-out;
     }
     h2 {
-      color: #2e7d32;
+      color: #81c784;
       margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .servicos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
     }
     .servico {
-      background-color: white;
+      background-color: #1e1e1e;
       padding: 25px;
-      margin: 20px 0;
-      border-left: 6px solid #66bb6a;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      border-left: 6px solid #43a047;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .servico:hover {
-      transform: scale(1.02);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.5);
     }
     footer {
-      background-color: #2e7d32;
+      background-color: #0d3d0d;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+    footer img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+    footer p {
+      margin: 8px 0;
     }
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(20px); }
@@ -77,8 +96,6 @@
 </head>
 <body>
   <header>
-    <h1>Consultoria Ambiental Legal</h1>
-    <p>Especialistas em legislação e regularização ambiental</p>
   </header>
 
   <nav>
@@ -89,33 +106,69 @@
 
   <section id="sobre">
     <h2>Quem Somos</h2>
-    <p>Somos uma equipe dedicada à orientação jurídica e técnica em legislação ambiental, atuando para garantir que sua empresa esteja em conformidade com as normas ambientais brasileiras.</p>
+    <p>A <strong>Cultivato</strong> é uma empresa especializada em soluções ambientais, comprometida em oferecer serviços de excelência para atender às necessidades de regularização, planejamento e gestão sustentável. Atuamos com foco em responsabilidade socioambiental, inovação e conformidade legal, apoiando empresas, empreendimentos e comunidades na preservação dos recursos naturais e no cumprimento da legislação ambiental.</p>
   </section>
 
   <section id="servicos">
     <h2>Nossos Serviços</h2>
-    <div class="servico">
-      <h3>Licenciamento Ambiental</h3>
-      <p>Assessoria completa para obtenção de licenças ambientais nos âmbitos municipal, estadual e federal.</p>
-    </div>
-    <div class="servico">
-      <h3>Auditoria e Conformidade</h3>
-      <p>Análise das atividades da empresa quanto à legislação ambiental vigente e recomendações corretivas.</p>
-    </div>
-    <div class="servico">
-      <h3>Capacitação em Legislação Ambiental</h3>
-      <p>Treinamentos e palestras sobre leis ambientais e responsabilidades jurídicas.</p>
+    <div class="servicos-container">
+      <div class="servico">
+        <h3>Licenciamento Ambiental</h3>
+        <p>Assessoria completa para obtenção de licenças junto aos órgãos competentes, assegurando conformidade legal e tranquilidade operacional.</p>
+      </div>
+      <div class="servico">
+        <h3>PGRS</h3>
+        <p>Desenvolvimento de planos de gerenciamento de resíduos sólidos, garantindo manejo adequado e sustentável.</p>
+      </div>
+      <div class="servico">
+        <h3>Plano de Arborização</h3>
+        <p>Elaboração e execução de projetos de arborização urbana e rural para promover qualidade de vida e equilíbrio ecológico.</p>
+      </div>
+      <div class="servico">
+        <h3>Supressão Vegetal</h3>
+        <p>Estudos técnicos para autorizações ambientais, com foco em medidas compensatórias e mitigação de impactos.</p>
+      </div>
+      <div class="servico">
+        <h3>PRAD</h3>
+        <p>Projetos de recuperação de áreas degradadas, assegurando a restauração do solo e da biodiversidade.</p>
+      </div>
+      <div class="servico">
+        <h3>Estudos Ambientais</h3>
+        <p>Elaboração de relatórios e análises técnicas para apoiar decisões e processos de licenciamento.</p>
+      </div>
+      <div class="servico">
+        <h3>CTF/APP – IBAMA e RAPP</h3>
+        <p>Assessoria completa para regularização no Cadastro Técnico Federal e suporte no envio do Relatório Anual de Atividades.</p>
+      </div>
+      <div class="servico">
+        <h3>Outorga de Recursos Hídricos</h3>
+        <p>Consultoria para solicitação e renovação de outorgas de uso da água de forma legal e sustentável.</p>
+      </div>
+      <div class="servico">
+        <h3>Educação Ambiental</h3>
+        <p>Programas de conscientização voltados a comunidades, empresas e instituições de ensino.</p>
+      </div>
+      <div class="servico">
+        <h3>Treinamentos</h3>
+        <p>Capacitação de equipes em boas práticas de sustentabilidade, segurança e gestão ambiental.</p>
+      </div>
+      <div class="servico">
+        <h3>Softwares Ambientais</h3>
+        <p>Desenvolvimento de soluções digitais sob medida para otimizar a gestão ambiental.</p>
+      </div>
     </div>
   </section>
 
   <section id="contato">
     <h2>Fale Conosco</h2>
-    <p>Email: contato@ambientallegal.com.br</p>
-    <p>Telefone: (11) 99999-9999</p>
+    <p>📧 Email: adriely979@gmail.com</p>
+    <p>📞 Telefone: (14) 99654-9994</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Consultoria Ambiental Legal - Todos os direitos reservados</p>
+    <img src="ICONE.png" alt="Cultivato Ícone">
+    <p>&copy; 2025 Cultivato - Soluções Ambientais</p>
+    <p>Contato: (14) 99654-9994</p>
   </footer>
 </body>
 </html>
